@@ -1,0 +1,35 @@
+{% load static %}
+<html>
+
+<head>
+<title>The1AboveAll's Blog</title>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+<div class='page-header'>
+<h1><a href="/">Welcome to Hell</a></h1>
+</div>
+
+
+<div class="content container">
+    <div class="row">
+        <div class="col-md-8">
+		<p> Hi! How the hell are you? </p>
+
+		<p>It works!</p>
+            {% block content %}
+                
+            {% endblock %}
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
